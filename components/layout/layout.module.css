@@ -1,0 +1,31 @@
+.container {
+    padding: 0 1rem;
+    margin: 0rem auto 6rem;
+    display: flex;
+}
+
+.thinContainer {
+    max-width: 18rem;
+    padding: 1rem 1rem 0;
+    display: flex;
+    align-items: center;
+
+}
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.backToHome {
+    margin: 3rem 0 0;
+}
+.lmao {
+    align-self: center;
+    vertical-align: middle;
+    line-height: 0;
+}
+.main {
+    float:left;
+}
