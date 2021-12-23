@@ -1,7 +1,8 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
-import Layout from '../components/layout'
+import Layout from '../components/layout/layout'
+import Header from '../components/header/header'
 
 export default function Home() {
   return (
@@ -12,11 +13,8 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-        <h1 className={styles.title}>
-          Kevin Yang
-        </h1>
-        <p>
-          Welcome to my website!
+        <p className={styles.description}>
+            Welcome to my website! Honestly I have no idea what to place here so placeholder lmao.
         </p>
 
 
