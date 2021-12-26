@@ -15,7 +15,7 @@ export default function ProjectBlock(props) {
                 />
 
                 <div className={styles.textContainer}>
-                    <p className={styles.titleText}><a href={props.link} className={styles.linkText} target="_blank">{props.title}</a></p>
+                    <p className={styles.titleText}><a href={props.link} className={styles.linkText} target="_blank" rel="noreferrer">{props.title}</a></p>
                     {/* <p className={styles.titleStyle}>{props.title}</p> */}
                     
                     <div 

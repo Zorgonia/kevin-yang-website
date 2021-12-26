@@ -18,7 +18,7 @@ export default function Projects({ allProjectData }) {
     <Layout>
       <h1 className={styles.title}>Projects</h1>
       <p className={styles.description}>
-          You can find my projects below. Most of the source codes can also be found on my <a href="https://github.com/Zorgonia" target="_blank">github</a>.
+          You can find my projects below. Most of the source codes can also be found on my <a href="https://github.com/Zorgonia" target="_blank" rel="noreferrer">github</a>.
       </p>
       {allProjectData.map(({id, contentHtml, title, link, image, date}) => (
         <ProjectBlock
