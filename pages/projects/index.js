@@ -22,6 +22,7 @@ export default function Projects({ allProjectData }) {
       </p>
       {allProjectData.map(({id, contentHtml, title, link, image, date}) => (
         <ProjectBlock
+            key={id}
             image={"/images/" + image}
             descriptionText={contentHtml}
             link={link}
