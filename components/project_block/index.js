@@ -1,13 +1,12 @@
 import styles from "./project_block.module.css"
 import Link from "next/link"
 import Image from "next/image"
-import utilStyles from '../../styles/utils.module.css'
 
 export default function ProjectBlock(props) {
     return (
         <div className={styles.container}>
                 <Image
-                    src="/images/cc.png"
+                    src={props.image ? props.image : "/images/profile.jpg"}
                     className={styles.subImage}
                     height={160}
                     width={160}
