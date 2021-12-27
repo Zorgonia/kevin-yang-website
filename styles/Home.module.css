@@ -51,8 +51,15 @@
 }
 
 .description {
-  margin: 1rem 0 0;
+  margin: 1rem 1rem 0;
   font-size: 1.5rem;
+  text-align: start;
+  max-width: 36rem;
+}
+
+.subdesc {
+  margin:1rem 1rem 0;
+  max-width: 48rem;
 }
 
 .code {
