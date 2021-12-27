@@ -1,17 +1,34 @@
-import Link from 'next/link'
-import Image from 'next/image'
 import Layout from '../../components/layout/layout'
+import ProjectBlock from '../../components/project_block'
+import styles from '../../styles/projects.module.css'
+import { getSortedProjectData } from '../../lib/projects'
 
-export default function Projects() {
+export async function getStaticProps() {
+    const allProjectData = await getSortedProjectData()
+    return {
+      props: {
+        allProjectData
+      }
+    }
+  }
+  
+
+export default function Projects({ allProjectData }) {
   return (
     <Layout>
-      <h1>Yo</h1>
-      <p>what's up dog</p>
-      <h2>
-        <Link href="/">
-            <a>Back to home</a>
-        </Link>
-      </h2>
+      <h1 className={styles.title}>Projects</h1>
+      <p className={styles.description}>
+          You can find my projects below. Most of the source codes can also be found on my <a href="https://github.com/Zorgonia" target="_blank" rel="noreferrer">github</a>.
+      </p>
+      {allProjectData.map(({id, contentHtml, title, link, image, date}) => (
+        <ProjectBlock
+            key={id}
+            image={"/images/" + image}
+            descriptionText={contentHtml}
+            link={link}
+            title={title}
+        />
+      ))}
     </Layout>
   )
 }
