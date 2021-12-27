@@ -5,3 +5,16 @@
 .description{
     margin: 1rem 1rem 1rem;
 }
+
+.columns{
+    margin: 0rem 3rem 0rem;
+}
+
+.centerText{
+    margin: 0rem;
+    text-align: center;
+}
+
+.centerItems{
+    align-items: st;
+}
