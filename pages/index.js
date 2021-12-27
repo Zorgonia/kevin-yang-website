@@ -19,7 +19,7 @@ export default function Home() {
             <br/><br/>
             I am most proficient in <b>Python</b>, and <b>Kotlin</b>, previously having done Android development for a year as a co-op at Accedo. 
             I also have used <b>Java, React, C, </b> and <b>Unity</b> previously. 
-            You can find all my technical skills on the <Link href={'/projects'}>projects page</Link> or <a target="_blank" rel="noreferrer" href={Constants().resumeUrl}>resume</a> .
+            You can find all my technical skills on the <Link href={"/projects"}>projects page</Link> or <a target="_blank" rel="noreferrer" href={Constants().resumeUrl}>resume</a> .
         </p>
 
 
